@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    vertical-align: middle;
+}
+.gameBoard{  
+    margin-top: 5%;
+}
+.playerInfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 42%;
+    line-height: 1px;
+}
+#player1{
+    width: 120px;
+    height: 100px;
+}
+#player2{
+    width: 120px;
+    height: 100px;
+}
+#player1 p{
+    color: rgb(9, 122, 14);
+    font-size: 30px; 
+}
+#player2 p{
+    color: rgb(185, 20, 20);
+    font-size: 30px;
+}
+table{
+    margin: 30px auto 80px auto;
+    border-collapse: collapse;
+}
+td{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+tr:first-child td{
+    border-top: none;
+}
+tr:last-child td{
+    border-bottom: none;
+}
+td:first-child{
+    border-left: none;
+  }
+td:last-child{
+    border-right: none;
+}
+.player_X{
+    color: rgb(9, 122, 14);
+    font-size: 50px;
+}
+.player_O{
+    color: rgb(185, 20, 20);
+    font-size: 50px;
+}
+.winning{
+    background-color: rgb(247, 201, 133);
+}
+#resetButton{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
