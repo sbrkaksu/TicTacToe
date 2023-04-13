@@ -62,8 +62,8 @@ for (let i = 1; i <= 9; i++) {
     if(this.innerHTML === "" && !gameEnd){
       this.innerHTML = playerSymbol;            //populate cells
       countForDraw++;
-      checkWin();                               //check after every movement if a player wins
-      draw();                                   //check after every movement if
+      checkWin();                               //check after every movement whether player1/2 wins
+      draw();                                   //check after every movement whether the game is draw
       if (playerSymbol == 'X'){                 //swapping
         playerSymbol = 'O';
         document.getElementById(`_${i}`).classList.add('player_X');  //styling X
